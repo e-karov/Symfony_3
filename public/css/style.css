@@ -3,7 +3,8 @@
 }
 
 .card {
-    width: 18rem;
+    width: fit-content;
+    margin:1rem;
 }
 
 .card-body {

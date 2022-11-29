@@ -4,8 +4,10 @@
 
 {% block body %}
     <div class="container">
-        {% for todo in todos %}
+        <div class="row row-cols-4">
+            {% for todo in todos %}
             {% include "components/card.html.twig" %}
         {% endfor %}
+        </div>
     </div>
 {% endblock %}

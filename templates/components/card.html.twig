@@ -1,16 +1,16 @@
-<div class="card m-2">
+<div class="card">
     <div class="card-body">
       <h5 class="card-title">{{todo.name}}</h5>
       <p class="card-text"><b>Category : </b>{{todo.category}}</p>
       <p class="card-text"><b>Description: </b>{{todo.description}}</p>
       <p class="card-text"><b>Priority: </b>{{todo.priority}}</p>
-      <p class="card-text"><b>Due date: </b>{{todo.dueDate|date()}}</p>
-      <p class="card-text"><b>Crated: </b>{{todo.createDate|date()}}</p>
+      <p class="card-text"><b>Due date: </b>{{todo.dueDate|date("d.m.Y g:i")}}</p>
+      <p class="card-text"><b>Crated: </b>{{todo.createDate|date("d.m.Y g:i")}}</p>
 
 
-      <a href="#" class="btn btn-primary">Edit</a>
-      <a href="#" class="btn btn-danger">Delete</a>
-      <a href="#" class="btn btn-warning">Back</a>
+      <a href="/details/{{todo.id}}" class="btn btn-primary">Details</a>
+      <a href="/edit/{{todo.id}}" class="btn btn-warning">Edit</a>
+      <a href="/delete/{{todo.id}}" class="btn btn-danger" onclick="return confirm('Do you want to delete \'{{todo.name}}\' task?')">Delete</a>
 
     </div>
   </div>

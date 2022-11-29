@@ -1,2 +1,12 @@
 {% extends "base.html.twig" %}
 {% block title %}Todo | Create{% endblock %}
+{% block body %}
+    <h1>Create Todo</h1>
+    
+    <div class="container w-50">
+        {{ form_start(form) }}
+        {{ form_widget(form) }}
+        {{ form_end(form) }}
+
+    </div>
+{% endblock %}
