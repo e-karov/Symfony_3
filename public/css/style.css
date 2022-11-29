@@ -1,0 +1,11 @@
+.navbar {
+    background-color: antiquewhite !important;
+}
+
+.card {
+    width: 18rem;
+}
+
+.card-body {
+    background-color:aliceblue;
+}

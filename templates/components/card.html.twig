@@ -1,0 +1,16 @@
+<div class="card m-2">
+    <div class="card-body">
+      <h5 class="card-title">{{todo.name}}</h5>
+      <p class="card-text"><b>Category : </b>{{todo.category}}</p>
+      <p class="card-text"><b>Description: </b>{{todo.description}}</p>
+      <p class="card-text"><b>Priority: </b>{{todo.priority}}</p>
+      <p class="card-text"><b>Due date: </b>{{todo.dueDate|date()}}</p>
+      <p class="card-text"><b>Crated: </b>{{todo.createDate|date()}}</p>
+
+
+      <a href="#" class="btn btn-primary">Edit</a>
+      <a href="#" class="btn btn-danger">Delete</a>
+      <a href="#" class="btn btn-warning">Back</a>
+
+    </div>
+  </div>
