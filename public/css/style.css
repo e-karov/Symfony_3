@@ -5,8 +5,5 @@
 .card {
     width: fit-content;
     margin:1rem;
-}
-
-.card-body {
-    background-color:aliceblue;
+    background-color:rgb(216, 241, 207) !important;
 }

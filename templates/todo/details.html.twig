@@ -3,5 +3,18 @@
 {% block title %}Todo | Details{% endblock %}
 
 {% block body %}
-    {% include "components/card.html.twig" %}
+   <div class="container w-75">
+        <h2 class="page-header">{{todo.name}}</h2>
+        <ul class="list-group">
+            <li class="list-group-item">Category: {{todo.category}}</li>
+            <li class="list-group-item">Priority: {{todo.priority}}</li>
+            <li class="list-group-item">Status: <b><i>{{todo.getFkStatus.name}}</i></b></li>
+            <li class="list-group-item">Due: <strong> {{todo.dueDate|date('F j, Y, g:i a')}} </strong> </li>
+        </ul>
+        <p>
+            {{todo.description}}
+        </p><br>
+        <a class="btn btn-primary" href="/">Back to List</a>
+   </div>
+
 {% endblock %}
